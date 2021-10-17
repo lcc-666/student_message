@@ -22,7 +22,6 @@ class insert_message(QDialog,Ui_insert_Dialog):
 
 
 
-
 #初始化界面
 class main_dialog(QDialog,Ui_main_Dialog):
     def __init__(self):
