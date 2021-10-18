@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>insert_Dialog</class>
- <widget class="QDialog" name="insert_Dialog">
+ <class>updata_Dialog</class>
+ <widget class="QDialog" name="updata_Dialog">
   <property name="geometry">
    <rect>
     <x>0</x>
