@@ -88,8 +88,8 @@
   <widget class="QPushButton" name="exit">
    <property name="geometry">
     <rect>
-     <x>210</x>
-     <y>400</y>
+     <x>200</x>
+     <y>390</y>
      <width>161</width>
      <height>61</height>
     </rect>
@@ -101,6 +101,24 @@
    </property>
    <property name="text">
     <string>退出系统</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>30</y>
+     <width>281</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>李畅超学生信息管理系统</string>
    </property>
   </widget>
  </widget>

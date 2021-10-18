@@ -38,7 +38,6 @@ def updata(tu):
     id=list(tu)[0]
     valuse.append(id)
     valuse=tuple(valuse)
-    print(valuse)
     db = pymysql.connect(host='www.chaogezuishuai.top',
                            user="root",
                            port=3306,
@@ -62,7 +61,6 @@ def delete(id):
                          charset="utf8")
     cursor = db.cursor()
     sql = "DELETE FROM student WHERE id='%s';" % id
-    print(sql)
     cursor.execute(sql)
     db.commit()
     cursor.close()
@@ -73,6 +71,7 @@ def delete(id):
 
 
 if __name__=="__main__":
-    tu=('45641', 'wa', 'fes', 'hdhr', '486', 'sefg')
-    #insert(tu)
+    # tu=('20190100702', '李畅超', '男', '山西省太原市', '17635684495', '大数据')
+    # insert(tu)
     #updata(tu)
+    delete('20190100702')

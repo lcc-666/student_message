@@ -2,7 +2,7 @@ from PyQt5.QtWidgets import QApplication,QDialog,QFileDialog
 import sys
 from sql import *
 from init import *
-from insert import *
+from insert_message import *
 from success import *
 from updata_message import *
 from select_message import *
@@ -20,10 +20,10 @@ class delete_message(QDialog,Ui_del_Dialog):
     def viewdata(self):
         id=self.id.text()
         print(id)
-        # if delete(id)==1:
-        #     dialog=success()
-        #     dialog.exec()
-        #     self.clear()
+        if delete(id)==1:
+            dialog=success()
+            dialog.exec()
+            self.clear()
 
     def clear(self):
         self.id.clear()
@@ -155,11 +155,6 @@ class main_dialog(QDialog,Ui_main_Dialog):
     def delete(self):
         dialog=delete_message()
         dialog.exec()
-
-
-
-
-
 
 
 if __name__=="__main__":

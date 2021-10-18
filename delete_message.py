@@ -16,7 +16,7 @@ class Ui_del_Dialog(object):
         del_Dialog.setObjectName("del_Dialog")
         del_Dialog.resize(640, 284)
         self.label = QtWidgets.QLabel(del_Dialog)
-        self.label.setGeometry(QtCore.QRect(50, 70, 131, 51))
+        self.label.setGeometry(QtCore.QRect(20, 70, 151, 51))
         font = QtGui.QFont()
         font.setPointSize(18)
         self.label.setFont(font)
